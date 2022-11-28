@@ -30,6 +30,25 @@ app.post('/submit', async (req, res) => {
     
 })
 
+app.post('/login', (req, res) => {
+    try{
+        res.send(req.body);
+    }catch(err) {
+        res.send(err);
+    }
+})
+
+app.get('/login', ( req, res ) => {
+    try {
+        res.render('login', {
+            title: 'sign up/in'
+        })
+
+    }catch(err) {
+        res.status(500).send(err);
+    }
+})
+
 app.listen(5000, () => {
     console.log(`Server is up and running on port:5000`);
 })
