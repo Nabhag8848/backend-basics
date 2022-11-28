@@ -23,7 +23,6 @@ const multerFilter = (req, file, cb) => {
     }
 }
 
-
 // const upload = multer({dest: 'uploads/img/'});
 const upload = multer({
     storage: multerStorage,
