@@ -1,13 +1,13 @@
-FROM node:16
+# Specify the base image
+FROM node:16-alpine
 
-WORKDIR /usr/src/app
+WORKDIR /usr/app/
 
-COPY package*.json ./
-
+# Installing dependencies
+COPY ./package.json /usr/app/
 RUN npm install
+COPY ./ /usr/app/
 
-COPY . .
+# Command to run when container starts
+CMD [ "npm", "start" ]
 
-EXPOSE 8080
-
-CMD ["node", "server.js"]
