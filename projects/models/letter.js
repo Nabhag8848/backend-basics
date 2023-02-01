@@ -73,7 +73,7 @@ async function insert(){
 
 }
 
-insert();
+insert().then((res) => console.log(res));
 
 
 // module.exports = Letter;
