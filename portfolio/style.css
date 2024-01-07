@@ -1,0 +1,48 @@
+#profile {
+  border-radius: 50%;
+  max-width: 4%;
+  max-height: 4%;
+}
+
+.nav-bar-list {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 30%;
+  overflow: hidden;
+}
+
+.nav-bar-list li {
+  float: left;
+  margin-left: 5%;
+  font-family: "Nanum Brush Script";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-bar-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar {
+  display: block;
+  padding-top: 1em;
+}
+
+#download {
+  margin-left: 5%;
+  background-color: #f5455c;
+  font-family: "Nanum Brush Script";
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 0em 1em;
+  border-radius: 5px;
+}
+
+#illustration {
+    margin: 2%;
+    padding-left: 60vw;
+    padding-top: 2vh;
+}
